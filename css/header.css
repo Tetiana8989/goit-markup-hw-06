@@ -127,9 +127,10 @@
   .mobile-menu-open-btn {
     display: none;
   }
-    .container-contacts-list {
+
+  .container-contacts-list {
     flex-direction: column;
-    row-gap: 8px;
+    row-gap: 12px;
   }
 
   .contacts-list-link {
@@ -137,26 +138,29 @@
     line-height: 1.17;
     letter-spacing: 0.04em;
   }
-  .contacts{
+
+  .contacts {
     margin-left: 129px;
   }
 }
 
 /* ============ ДЕСКТОП ============ */
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
   .logo {
     margin-right: 76px;
   }
 
-  .contacts-list-link {
-    padding: 24px 0;
+  .contacts {
+    margin-left: auto;
   }
-    .container-contacts-list {
+
+  .container-contacts-list {
     flex-direction: row;
     column-gap: 40px;
   }
 
   .contacts-list-link {
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;

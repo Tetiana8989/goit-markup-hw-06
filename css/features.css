@@ -52,7 +52,7 @@
 
 
 /* =============== ДЕСКТОП =============== */
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
   .features {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -88,4 +88,3 @@
     fill: #2e2f42;
   }
 }
-
