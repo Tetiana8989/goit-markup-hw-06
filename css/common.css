@@ -17,7 +17,7 @@ margin-bottom: 0;
 ul {
 list-style-type: none;
 margin: 0;
-padding-left: 0;
+padding: 0;
 }
 
 img {
@@ -27,13 +27,32 @@ display: block;
 a {
 text-decoration: none;
 }
+button{
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
 
 .container {
-max-width: 1158px;
-margin-left: auto;
-margin-right: auto;
-padding-left: 15px;
-padding-right: 15px;
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .container {
+    max-width: 1168px;
+  }
 }
  /*======прихований заголовок=======*/
 .sr-only {
@@ -49,7 +68,8 @@ clip: rect(0 0 0 0);
 clip-path: inset(100%);
 }
 
-/*
-margin-left: auto;     відцентровує контейнер з ліва автоматично
-margin-right: auto;    відцентровує контейнер з права
-*/
+
+
+/**{
+  outline: 1px solid red;
+}

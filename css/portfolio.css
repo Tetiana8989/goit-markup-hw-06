@@ -1,13 +1,14 @@
+/* =============== МОБІЛКА =============== */
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .portfolio-title {
   margin-bottom: 72px;
-  font-size: 36px;
   font-weight: 700;
-  line-height: 1.11;
+  font-size: 36px;
+  line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -15,23 +16,21 @@
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
+  flex-direction: column;
+  gap: 48px;
 }
 
 /* картка + плавна тінь */
 .portfolio-list-item {
-  width: calc((100% - 2 * 24px) / 3);
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-              0 1px 1px 0 rgba(46, 47, 66, 0.16),
-              0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-
 
 /* обгортка фото */
 .portfolio-thumb {
@@ -45,7 +44,7 @@
   height: auto;
 }
 
-/* оверлей */
+/* оверлей — працює на всіх ширинах */
 .portfolio-overlay {
   position: absolute;
   top: 0;
@@ -53,9 +52,10 @@
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 40px 32px;
+  padding: 32px 24px;
   background-color: #4d5ae5;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 15px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
@@ -63,7 +63,8 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list-item:hover .portfolio-overlay {
+.portfolio-list-item:hover .portfolio-overlay,
+.portfolio-list-item:focus-within .portfolio-overlay {
   transform: translateY(0);
 }
 
@@ -89,4 +90,38 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+/* =============== ПЛАНШЕТ =============== */
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .portfolio-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+/* =============== ДЕСКТОП =============== */
+@media screen and (min-width: 1168px) {
+  .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-list {
+    gap: 48px 24px;
+  }
+
+  .portfolio-list-item {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+
+  .portfolio-overlay {
+    padding: 40px 32px;
+    font-size: 16px;
+  }
 }

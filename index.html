@@ -13,8 +13,8 @@
     
      </head>
  <body>
-        <!--PAGE HEADER-->
-        <header class="header" id="header">  
+      <!--PAGE HEADER-->
+       <header class="header" id="header">  
               
              <div class="container container-header">
                          <a class="logo" href="./index.html">
@@ -37,18 +37,23 @@
                          <a class="contacts-list-link" href="tel:110001111111">+11 (000) 111-11-11</a></li>
                  </ul>
              </address>
+             <button class="mobile-menu-open-btn">
+                    <svg class="mobile-menu-btn-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-burger"></use>
+                    </svg>
+                 </button>
           </div>
         </header>
        <main> 
              <!--HERO SECTION-->
-          <section class="hero" id="hero"> 
+         <section class="hero" id="hero"> 
              <div class="container hero-container">              
                  <h1 class="hero-title">Effective Solutions for Your Business</h1> 
                  <button class="button hero-button" type="button">Order Service </button>
              </div>
           </section>
              <!--FEATURES SECTION -->
-          <section class="features" id="features">
+         <section class="features" id="features">
               <div class="container container-features">
                  <h2 class="sr-only">Our features</h2>
                  <ul class="features-list">
@@ -91,7 +96,7 @@
                  </ul>
                </div>
          </section>   
-                      
+                   
            
                 <!-- TEAM -->
           <section class="team" id="team">
@@ -250,7 +255,7 @@
              </div>
              </section>
                 <!-- PORTFOLIO -->
-             <section class="portfolio" id="portfolio">
+            <section class="portfolio" id="portfolio">
              <div class="container container-portfolio">
                  <h2 class="portfolio-title">Our Portfolio</h2>
                  <ul class="portfolio-list">
@@ -379,13 +384,13 @@
                                Subscribe<svg class="subscribe-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-send-icon"></use>
                                 </svg>
-                               </button>
+                              </button>
                     </form>
                  </div>
              </div>
          </footer>
             
-         <div class="modal-overlay is-open" id="modal">
+         <div class="modal-overlay" id="modal">
           <div class="modal">
             <button class="modal-close-btn" type="button" aria-label="Close modal">
               <svg class="modal-close-icon" width="8" height="8">
@@ -463,5 +468,64 @@
             </form>
           </div>
          </div>
+
+
+
+
+         <div class="mobile-menu" id="mobile-menu">
+           <div class="container mobile-menu-container">
+             <button class="mobile-menu-close-btn" type="button" aria-label="Close menu">
+               <svg class="mobile-menu-close-icon" width="8" height="8">
+                  <use href="./images/icons.svg#icon-close-btn"></use>
+               </svg>
+             </button>
+
+              <nav class="mobile-page-navigation">
+                 <ul class="mobile-page-menu">
+                   <li><a class="mobile-page-menu-link current" href="#features">Features</a></li>
+                   <li><a class="mobile-page-menu-link" href="#team">Team</a></li>
+                   <li><a class="mobile-page-menu-link" href="#portfolio">Portfolio</a></li>
+                 </ul>
+              </nav>
+
+                <div class="mobile-menu-bottom">
+  <address class="mobile-menu-contacts">
+    <a class="mobile-menu-tel" href="tel:110001111111">+11 (000) 111-11-11</a>
+    <a class="mobile-menu-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+  </address>
+
+  <ul class="mobile-menu-socials">
+    <li>
+      <a class="mobile-menu-social-link" href="#" aria-label="Instagram">
+        <svg class="mobile-menu-social-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-instagram"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a class="mobile-menu-social-link" href="#" aria-label="Twitter">
+        <svg class="mobile-menu-social-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-twitter"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a class="mobile-menu-social-link" href="#" aria-label="Facebook">
+        <svg class="mobile-menu-social-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-facebook"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a class="mobile-menu-social-link" href="#" aria-label="LinkedIn">
+        <svg class="mobile-menu-social-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-linkedin"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+       </div>  
+      </div>
       </body>
-</html>
+</html>       

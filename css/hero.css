@@ -1,14 +1,22 @@
+/* ================= МОБІЛКА (базові стилі) ================= */
 .hero {
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-color: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.4), rgba(46, 47, 66, 0.7)),
-                    url("../images/hero-bg.jpg");
+    url("../images/hero-bg-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.4), rgba(46, 47, 66, 0.7)),
+      url("../images/hero-bg-mobile@2x.jpg");
+  }
 }
 
 .hero-container {
@@ -18,11 +26,11 @@
 }
 
 .hero-title {
-  max-width: 496px;
-  margin-bottom: 48px;
-  font-size: 56px;
+  max-width: 216px;
+  margin-bottom: 72px;
   font-weight: 700;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
@@ -47,4 +55,61 @@
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
+}
+
+
+
+
+
+
+
+
+/* ================= ПЛАНШЕТ ================= */
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.4), rgba(46, 47, 66, 0.7)),
+      url("../images/hero-bg-tablet@1x.jpg");
+  }
+
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.4), rgba(46, 47, 66, 0.7)),
+      url("../images/hero-bg-tablet@2x.jpg");
+  }
+}
+
+
+
+
+
+
+/* ================= ДЕСКТОП ================= */
+@media screen and (min-width: 1168px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.4), rgba(46, 47, 66, 0.7)),
+      url("../images/hero-bg.jpg");
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1168px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.4), rgba(46, 47, 66, 0.7)),
+      url("../images/hero-bg@2x.jpg");
+  }
 }
