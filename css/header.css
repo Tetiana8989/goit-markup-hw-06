@@ -35,6 +35,9 @@
 .contacts {
   display: none;
 }
+.contacts{
+  font-style: normal;
+}
 
 /* бургер */
 .mobile-menu-open-btn {

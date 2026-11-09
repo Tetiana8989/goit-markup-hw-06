@@ -72,6 +72,9 @@
     font-weight: 500;
     line-height: 1.2;
   }
+    .features-item-text {
+    font-weight: 400;
+  }
 
   .feature-icon-wrap {
     display: flex;
